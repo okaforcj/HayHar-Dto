@@ -17,12 +17,13 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org
+      - run: npm version minor
       - run: npm install
       - run: npm run build
       - name: user
         uses: fregante/setup-git-user@v1
       - name: 🚀 publish
-        run: npm version minor && npm publish --access public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
