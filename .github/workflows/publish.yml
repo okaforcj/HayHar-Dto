@@ -19,7 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: user
         uses: fregante/setup-git-user@v1
-      - run: npm version minor && git push --tags
+      - run: npm version minor && git push --follow-tags
       - run: npm install
       - run: npm run build
       - name: 🚀 publish
