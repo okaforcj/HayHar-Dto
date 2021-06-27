@@ -18,8 +18,8 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - run: npm install
-      - run: npm version minor
       - run: npm run build
+      - run: npm version minor
       - name: user
         uses: fregante/setup-git-user@v1
       - name: 🚀 publish
