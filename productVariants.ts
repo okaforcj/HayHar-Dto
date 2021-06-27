@@ -6,7 +6,6 @@ type ProductVariants= {
     size?: string
     mainImg: string;
     prodImgs?: string[];
-
 }
 
 export default ProductVariants;
