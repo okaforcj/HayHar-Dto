@@ -18,8 +18,6 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - name: 🚀 publish
-        with:
-          git_email: okaforcj@icloud.com
         run: npm version minor && npm run build && npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
