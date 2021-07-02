@@ -5,7 +5,7 @@ type ProductSchema = {
     name: string;
     price: number;
     description: string;
-    photos: string[];
+    photos: Photo[];
     size?: number;
     backImg?: string;
     salePercentage?: number;
@@ -13,6 +13,14 @@ type ProductSchema = {
     noOfReviews?: number;
     averageRating?: number;
     variants?: ProductVariant[];
+}
+
+type Photo = {
+    url: string,
+    size?: {
+        width: string,
+        height: string,
+    }
 }
 
 export default ProductSchema;
