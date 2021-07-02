@@ -18,8 +18,8 @@ type ProductSchema = {
 export type Photo = {
     url: string,
     size?: {
-        width: string,
-        height: string,
+        width: number,
+        height: number,
     }
 }
 
