@@ -15,7 +15,7 @@ type ProductSchema = {
     variants?: ProductVariant[];
 }
 
-type Photo = {
+export type Photo = {
     url: string,
     size?: {
         width: string,
