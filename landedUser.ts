@@ -6,6 +6,7 @@ type LandedUser = {
    lastName: string;
    email: string;
    uid: string;
+   dob?: string;
    addresses?: AddressType;
    stripeId?: string;
    orderedProducts?: String[];
