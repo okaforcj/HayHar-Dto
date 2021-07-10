@@ -16,7 +16,7 @@ type LandedUser = {
 
 type AddressType = {
    preferredAddress: ShippingDetailsAddress
-   otherAddresses: ShippingDetailsAddress
+   otherAddresses: ShippingDetailsAddress[]
 }
 
 export default LandedUser;
