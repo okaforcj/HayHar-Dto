@@ -7,11 +7,16 @@ type LandedUser = {
    email: string;
    uid: string;
    dob?: string;
-   addresses?: Map<ShippingDetailsAddress, boolean>;
+   addresses?: AddressType[];
    stripeId?: string;
    orderedProducts?: String[];
    wishlist?: string[]
    photoUrl?: string;
+}
+
+export type AddressType = {
+   address: ShippingDetailsAddress,
+   preferred: boolean
 }
 
 export default LandedUser;
