@@ -7,7 +7,7 @@ type LandedUser = {
    email: string;
    uid: string;
    dob?: string;
-   addresses?: ShippingDetailsAddress[];
+   addresses?: Map<ShippingDetailsAddress, boolean>;
    stripeId?: string;
    orderedProducts?: String[];
    wishlist?: string[]
