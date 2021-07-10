@@ -17,6 +17,7 @@ type LandedUser = {
 export type AddressType = {
    address: ShippingDetailsAddress,
    preferred: boolean
+   id: string;
 }
 
 export default LandedUser;
