@@ -11,7 +11,7 @@ type ProductSchema = {
     salePercentage?: number;
     color?: string;
     noOfReviews?: number;
-    averageRating?: number;
+    totalRating?: number;
     variants?: ProductVariant[];
 }
 
