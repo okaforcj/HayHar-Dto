@@ -5,3 +5,5 @@ type ProductReview = {
     totalRating: number;
     reviewSnapshot: ReviewSchema[]
 }
+
+export default ProductReview
