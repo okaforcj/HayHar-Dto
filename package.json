@@ -1,6 +1,6 @@
 {
   "name": "hayhar-dto",
-  "version": "1.9.9",
+  "version": "1.10.0",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
