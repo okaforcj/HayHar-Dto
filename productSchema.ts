@@ -10,8 +10,6 @@ type ProductSchema = {
     backImg?: string;
     salePercentage?: number;
     color?: string;
-    noOfReviews?: number;
-    totalRating?: number;
     variants?: ProductVariant[];
 }
 
