@@ -8,6 +8,7 @@ type ReviewSchema = {
     createdTime: any,
     productId: string,
     reviewee: string,
+    uid: string,
     photos?: string[]
 }
 
