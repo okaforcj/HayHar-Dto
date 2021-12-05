@@ -1,19 +1,14 @@
 {
   "name": "@vettil/commerce-dto",
-<<<<<<< HEAD
-  "version": "1.0.1",
+  "version": "1.0.2",
   "types": "dist/IUser.d.ts",
   "main": "dist/IUser.js",
-=======
-  "version": "1.0.2",
-  "types": "index.d.ts",
->>>>>>> 9c3fbd4055deed46c3e2d800dcfb1f4ba1abf6c3
   "scripts": {
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vettil/commerce-dto.git"
+    "url": "git+https:/gi/github.com/vettil/commerce-dto.git"
   },
   "author": "River C. Okafor",
   "license": "MIT",
