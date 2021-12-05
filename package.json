@@ -1,11 +1,9 @@
 {
   "name": "@vettil/commerce-dto",
-
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
     "dist"
   ],
-
   "scripts": {
     "build": "tsc"
   },
