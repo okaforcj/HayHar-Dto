@@ -1,12 +1,11 @@
 import CartProductSchema from "./cartProductSchema";
-// firebase.firestore.FieldValue
 
 type OrderSchema = {
     order: CartProductSchema[];
     createdTime: any;
     orderId: string,
     progressMessage: string,
-    edd?: Date,
+    edd?: Date, // Estimated Delivery Date
     deliveryDate?: Date,
 }
 

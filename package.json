@@ -1,20 +1,22 @@
 {
-  "name": "hayhar-dto",
-  "version": "1.10.1",
+  "name": "@vettil/commerce-dto",
+  "version": "1.0.0",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/okaforcj/HayHar-Dto.git"
+    "url": "git+https://github.com/vettil/commerce-dto.git"
   },
   "author": "River C. Okafor",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.3.4"
   },
-  "dependencies": {
-    "@types/stripe-v3": "^3.1.24"
-  }
+  "bugs": {
+    "url": "https://github.com/vettil/commerce-dto/issues"
+  },
+  "homepage": "https://github.com/vettil/commerce-dto#readme",
+  "description": "Type definition for vettil commerce"
 }
