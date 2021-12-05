@@ -1,4 +1,5 @@
-export * from "./types/IUser";
+/// <reference path="./types/IUser.ts" />
+export * as IUser from "./types/IUser";
 export * from "./types/cartProductSchema";
 export * from "./types/orderSchema";
 export * from "./types/productReview";

@@ -5,7 +5,7 @@ type ReviewSchema = {
     description: string,
     rating: number,
     emailAddress: string,
-    createdTime: any,
+    createdTime: Date,
     productId: string,
     reviewee: string,
     uid: string,
