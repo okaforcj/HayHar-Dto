@@ -1,6 +1,6 @@
 {
   "name": "@vettil/commerce-dto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "types": "dist/IUser.d.ts",
   "main": "dist/IUser.js",
   "scripts": {
