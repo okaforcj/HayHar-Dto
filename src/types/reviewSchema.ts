@@ -1,6 +1,4 @@
-// firebase.firestore.FieldValue
-
-type ReviewSchema = {
+export type ReviewSchema = {
     title: string,
     description: string,
     rating: number,
@@ -11,5 +9,3 @@ type ReviewSchema = {
     uid: string,
     photos?: string[]
 }
-
-export default ReviewSchema

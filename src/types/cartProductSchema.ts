@@ -1,10 +1,7 @@
-import ProductSchema from "./productSchema";
-// import {Variants} from "framer-motion";
+import { ProductSchema } from "./ProductSchema";
 
-type CartProductSchema = {
+export type CartProductSchema = {
     cartProduct: ProductSchema
     qty: number
     variants?: any
 }
-
-export default CartProductSchema;

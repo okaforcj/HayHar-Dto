@@ -1,9 +1,8 @@
-import ReviewSchema from "./reviewSchema";
+import { ReviewSchema } from "./ReviewSchema";
 
-type ProductReview = {
+
+export type ProductReview = {
     noOfReviews: number;
     totalRating: number;
     reviewSnapshot: ReviewSchema[]
 }
-
-export default ProductReview

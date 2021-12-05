@@ -1,7 +1,6 @@
-import CartProductSchema from "./cartProductSchema";
+import { CartProductSchema } from "./CartProductSchema";
 
-
-type OrderSchema = {
+export type OrderSchema = {
     order: CartProductSchema[];
     createdTime: any;
     orderId: string,
@@ -9,5 +8,3 @@ type OrderSchema = {
     edd?: Date, // Estimated Delivery Date
     deliveryDate?: Date,
 }
-
-export default OrderSchema;

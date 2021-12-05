@@ -1,4 +1,4 @@
-type IUser = {
+export type IUser = {
    firstName: string;
    lastName: string;
    email: string;
@@ -18,5 +18,3 @@ export type AddressType = {
    preferred: boolean
    id: string;
 }
-
-export default IUser;

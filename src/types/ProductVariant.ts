@@ -1,4 +1,4 @@
-type ProductVariants= {
+export type ProductVariant= {
     id: string
     name: string;
     colour?: string;
@@ -7,5 +7,3 @@ type ProductVariants= {
     mainImg: string;
     prodImgs?: string[];
 }
-
-export default ProductVariants;

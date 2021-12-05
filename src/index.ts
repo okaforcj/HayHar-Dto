@@ -1,33 +1,7 @@
-
-export type ReviewSchema = {
-    title: string,
-    description: string,
-    rating: number,
-    emailAddress: string,
-    createdTime: Date,
-    productId: string,
-    reviewee: string,
-    uid: string,
-    photos?: string[]
-}
-
-export type IUser = {
-    firstName: string;
-    lastName: string;
-    email: string;
-    uid: string;
-    dob?: string;
-    addresses?: AddressType[];
-    stripeId?: string;
-    orderedProducts?: String[];
-    wishlist?: string[]
-    photoUrl?: string;
-    createdAt: Date;
-    updatedAt: Date;
- }
- 
- export type AddressType = {
-    address: any,
-    preferred: boolean
-    id: string;
- }
+export * from "./types/CartProductSchema"
+export * from "./types/IUser"
+export * from "./types/OrderSchema"
+export * from "./types/ProductReview"
+export * from "./types/ProductSchema"
+export * from "./types/ProductVariant"
+export * from "./types/ReviewSchema"
