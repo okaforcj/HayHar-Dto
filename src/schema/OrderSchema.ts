@@ -1,7 +1,6 @@
 import { date, object, string, z } from "zod";
 import { CartProductSchema } from "./CartProductSchema";
 
-
 export const OrderSchema = object({
   order: CartProductSchema,
   createdTime: date(),
