@@ -1,10 +1,14 @@
+import { date, object, string, z } from "zod";
 import { CartProductSchema } from "./CartProductSchema";
 
-export type OrderSchema = {
-    order: CartProductSchema[];
-    createdTime: any;
-    orderId: string,
-    progressMessage: string,
-    edd?: Date, // Estimated Delivery Date
-    deliveryDate?: Date,
-}
+
+export const OrderSchema = object({
+  order: CartProductSchema,
+  createdTime: date(),
+  orderId: string(),
+  progressMessage: string(),
+  edd: date(), // Estimated Delivery Date
+  deliveryDate: date().optional(),
+});
+
+export type OrderSchemaDto = z.infer<typeof OrderSchema>

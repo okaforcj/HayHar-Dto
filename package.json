@@ -18,5 +18,8 @@
     "url": "https://github.com/vettil/commerce-dto/issues"
   },
   "homepage": "https://github.com/vettil/commerce-dto#readme",
-  "description": "Type definition for vettil commerce"
+  "description": "Type definition for vettil commerce",
+  "dependencies": {
+    "zod": "^3.11.6"
+  }
 }
