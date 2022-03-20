@@ -1,0 +1,13 @@
+{
+  "name": "vettil-commerce-dto",
+  "version": "1.0.0",
+  "description": "Type Library",
+  "main": "index.js",
+  "repository": "https://github.com/okaforcj/vettil-commerce-dto.git",
+  "author": "okaforcj <okaforcj@icloud.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "zod": "^3.14.2"
+  }
+}
