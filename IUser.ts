@@ -21,11 +21,9 @@ export const IUserSchema = UserRegSchema.merge(
     dob: z.string().optional(),
     addresses: AddressTypeSchema.optional(),
     stripeId: z.string().optional(),
-    orderedProducts: z.array(z.string()).optional(),
-    wishlist: z.array(z.string()).optional(),
     photoUrl: z.string().optional(),
-    createdAt: z.date().optional(),
-    updatedAt: z.date().optional(),
+    createdAt: z.date(),
+    updatedAt: z.date(),
   })
 ).omit({ password: true });
 
