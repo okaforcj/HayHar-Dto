@@ -1,4 +1,6 @@
 import z from "zod";
+
+export const helloFresh = "ppssss";
 export const UserRegSchema = z.object({
   email: z.string().email().nonempty(),
   password: z.string().nonempty(),
