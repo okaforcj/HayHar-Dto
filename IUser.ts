@@ -8,7 +8,7 @@ export const UserRegSchema = z.object({
 });
 // extract the inferred type
 export type UserReg = z.infer<typeof UserRegSchema>;
-
+// f
 export const AddressTypeSchema = z.object({
   address: z.any(),
   preferred: z.boolean(),
