@@ -6,7 +6,7 @@ export const ColorSchema = z.object({
   name: z.string(),
   bgColor: z.string(),
 });
-export type Color = z.infer<typeof ColorSchema>;
+export type ProductColor = z.infer<typeof ColorSchema>;
 
 export const SizeSchema = z.object({
   _id: z.string(),
