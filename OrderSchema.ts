@@ -2,9 +2,10 @@ import { CartProduct } from "./CartProductSchema";
 
 export type OrderSchema = {
   order: CartProduct[];
-  createdTime: any;
+  createdTime: Date;
   orderId: string;
   progressMessage: string;
-  edd?: Date; // Estimated Delivery Date
+  estimatedDeliveryDate: Date; // Estimated Delivery Date
+  trackingNo?: string
   deliveryDate?: Date;
 };

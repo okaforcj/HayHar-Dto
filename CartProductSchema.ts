@@ -1,8 +1,12 @@
 import { z } from "zod";
-import { ProductSchema } from "./ProductSchema";
 
 export const CartProductSchema = z.object({
-  product: ProductSchema,
+  name: z.string().nonempty(),
+  price: z.number().gt(0),
+  size: z.string(),
+  color: z.string(),
+  id: z.string(),
+  image: z.string().url(),
   qty: z.number(),
 });
 export type CartProduct = z.infer<typeof CartProductSchema>;

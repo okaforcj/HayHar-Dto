@@ -27,7 +27,16 @@ export const IUserSchema = UserRegSchema.merge(
   })
 ).omit({ password: true });
 
+export const IUserUpdateSchema = IUserSchema.omit({
+  _id: true,
+  createdAt: true,
+  updatedAt: true,
+})
+  .partial()
+  .transform((val) => ({ ...val, updatedAt: new Date() }));
+
 export type IUser = z.infer<typeof IUserSchema>;
+export type IUserUpdate = z.infer<typeof IUserUpdateSchema>;
 
 export type AddressType = {
   address: any;
