@@ -1,11 +1,26 @@
-import { CartProduct } from "./CartProductSchema";
+import Stripe from "stripe";
 
 export type OrderSchema = {
-  order: CartProduct[];
-  createdTime: Date;
-  orderId: string;
+  orders: ProductOrder[];
+  _id: string;
   progressMessage: string;
-  estimatedDeliveryDate: Date; // Estimated Delivery Date
-  trackingNo?: string
-  deliveryDate?: Date;
+  trackingNo?: string;
+  createdAt: Date;
+  updatedAt: Date;
+  customerEmail: string;
+  shippingDetails: Stripe.Checkout.Session.Shipping;
+  shippingRate: {
+    name: string;
+    price: number;
+    deliveryEstimate: Stripe.ShippingRate.DeliveryEstimate | null;
+  };
+};
+
+export type ProductOrder = {
+  name: string;
+  price: number;
+  stripeId: string;
+  _id: string;
+  qty: number;
+  metadata: { [key: string]: string };
 };
