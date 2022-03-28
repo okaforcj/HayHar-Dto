@@ -4,6 +4,7 @@ export type OrderSchema = {
   orders: ProductOrder[];
   _id: string;
   progressMessage: string;
+  stripeCustomerId: string;
   trackingNo?: string;
   createdAt: Date;
   updatedAt: Date;
