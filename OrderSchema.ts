@@ -3,7 +3,8 @@ import Stripe from "stripe";
 export type OrderSchema = {
   orders: ProductOrder[];
   _id: string;
-  totalPrice: number
+  totalPrice: number;
+  customerId: string;
   progressMessage: string;
   stripeCustomerId: string;
   trackingNo?: string;
