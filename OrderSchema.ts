@@ -26,7 +26,6 @@ export type ProductOrder = {
   _id: string;
   qty: number;
   imageUrl: string;
-  description: string;
   metadata: { [key: string]: string };
 };
 
