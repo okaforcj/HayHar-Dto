@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 
 export type OrderSchema = {
-  orders: ProductOrder[];
+  products: ProductOrder[];
   _id: string;
   totalPrice: number;
   customerId: string;
