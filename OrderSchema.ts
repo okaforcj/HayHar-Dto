@@ -25,5 +25,7 @@ export type ProductOrder = {
   stripeId: string;
   _id: string;
   qty: number;
+  imageUrl: string;
+  description: string;
   metadata: { [key: string]: string };
 };
