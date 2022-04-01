@@ -23,6 +23,7 @@ export type ProductOrder = {
   name: string;
   price: number;
   stripeId: string;
+  description: string;
   _id: string;
   qty: number;
   imageUrl: string;
