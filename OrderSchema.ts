@@ -11,6 +11,7 @@ export type OrderSchema = {
   createdAt: Date;
   updatedAt: Date;
   customerEmail: string;
+  paymentInfo: PaymentInfo;
   shippingDetails: Stripe.Checkout.Session.Shipping;
   shippingRate: {
     name: string;
@@ -23,11 +24,26 @@ export type ProductOrder = {
   name: string;
   price: number;
   stripeId: string;
-  description: string;
-  _id: string;
   qty: number;
   imageUrl: string;
-  metadata: { [key: string]: string };
+  metadata: ProductMetaData;
 };
 
-//test alias
+export type ProductMetaData = {
+  description: string;
+  id: string;
+  size?: string;
+  color?: string;
+};
+
+export type PaymentInfo =
+  | {
+      type: "card";
+      expMonth: number;
+      expYear: number;
+      last4: string;
+      walletType?: string | null;
+    }
+  | {
+      type: "klarna";
+    };
