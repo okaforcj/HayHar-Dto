@@ -3,7 +3,7 @@ import { z } from "zod";
 export const ProductAggSchema = z.object({
   noOfReviews: z.number().default(0),
   totalRating: z.number().default(0),
-  countAggregation: z
+  reviewAggregation: z
     .object({
       1: z.number().default(0),
       2: z.number().default(0),
