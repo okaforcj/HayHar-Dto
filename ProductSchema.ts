@@ -1,6 +1,7 @@
 import { z } from "zod";
+import { ProductAggSchema } from "./ProductReview";
+import { zodDate } from "./util";
 
-//just testing
 export const ColorSchema = z.object({
   _id: z.string(),
   name: z.string(),
@@ -26,9 +27,6 @@ export type ProductDetail = {
   items: string[];
 };
 
-const zodDate = z.preprocess((arg) => {
-  if (typeof arg == "string" || arg instanceof Date) return new Date(arg);
-}, z.date());
 export const ProductRegSchema = z.object({
   name: z.string().nonempty(),
   price: z.number().gt(0),
@@ -48,7 +46,8 @@ export const ProductSchema = ProductRegSchema.merge(
     createdAt: zodDate,
     modifiedAt: zodDate,
   })
-);
+).merge(ProductAggSchema);
+
 export const ExistingProductSchema = ProductRegSchema.merge(ProductSchema).omit(
   { _id: true, createdAt: true }
 );
