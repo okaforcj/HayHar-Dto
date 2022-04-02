@@ -47,7 +47,6 @@ export const ProductSchema = ProductRegSchema.merge(
     modifiedAt: zodDate,
   })
 ).merge(ProductAggSchema);
-
 export const ExistingProductSchema = ProductRegSchema.merge(ProductSchema).omit(
   { _id: true, createdAt: true }
 );
